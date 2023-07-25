@@ -5,12 +5,9 @@ const Item = (props) => {
     const [item , setItem]=useContext(ItemContext)
     const chooseHandle=()=>{
         setItem(props.itemName)
-        console.log(item)
     }
     return(
-      <div
-          onClick={chooseHandle}
-      >
+      <div className={"text-2xl bg-blue-500 rounded-lg pl-3 hover:bg-sky-700"} onClick={chooseHandle}>
           {props.itemName}
       </div>
   )

@@ -5,9 +5,9 @@ const MenuList = () => {
     const [items,setItems]=useState(["item1","item2","item3","item4","item5","item6","item7","item8","item9","item10"]);
 
   return(
-      <div>
+      <div className={"flex flex-col gap-3 p-5 hover"}>
           {items.map((value,index)=>(
-              <div>
+              <div className={""}>
                   <Item itemName={value}/>
               </div>
 
