@@ -8,10 +8,10 @@ const App = () => {
 
         <>
             <ItemProvider>
-                <div className={"flex items-center justify-center h-screen w-screen bg-blue-200"}>
-                    <div className={"flex flex-row box-content h-2/3 w-7/12 border-2 rounded-lg border-cyan-900"}>
-                        <div className={"basis-1/3 overflow-auto overflow-x-hidden"}><MenuList/></div>
-                        <div className={"basis-2/3 border-l-2 border-cyan-900 rounded-lg"}><ItemInfo/></div>
+                <div className={"flex items-center justify-center h-screen w-screen bg-white"}>
+                    <div className={"flex flex-row box-content h-2/3 w-7/12 border-2 rounded-lg border-black"}>
+                        <div className={"basis-1/3 overflow-auto overflow-x-hidden bg-gradient-to-b from-[#FFC26F] to-[#F9E0BB]"}><MenuList/></div>
+                        <div className={"basis-2/3 border-l-2 border-black rounded-lg bg-[#F9E0BB]"}><ItemInfo/></div>
                     </div>
                 </div>
             </ItemProvider>

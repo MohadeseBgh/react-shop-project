@@ -7,7 +7,7 @@ const Item = (props) => {
         setItem(props.itemName)
     }
     return(
-      <div className={"text-2xl bg-blue-500 rounded-lg pl-3 hover:bg-sky-700"} onClick={chooseHandle}>
+      <div className={"text-2xl bg-[#C38154] rounded-lg pl-3 hover:bg-[#884A39]"} onClick={chooseHandle}>
           {props.itemName}
       </div>
   )
