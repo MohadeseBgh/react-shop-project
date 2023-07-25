@@ -3,8 +3,8 @@ import React from "react";
 const App = () => {
     return(
         <>
-            <div className={"bg-cyan-600"}>
-                Hello worldsrftgyhujikl;
+            <div className={"flex items-center justify-center h-screen w-screen bg-blue-200"}>
+                Hello world!!!!
             </div>
         </>
     );
