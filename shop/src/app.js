@@ -10,7 +10,7 @@ const App = () => {
         <>
             <ItemProvider>
                 <div className={"flex flex-col items-center justify-center h-screen w-screen bg-[#CACACA]"}>
-                        <div className={" basis-1/12 w-full"}>
+                        <div className={"basis-1/12 w-full"}>
                             <NavBar/>
                         </div>
                         <div className={"flex flex-row basis-11/12 w-full"}>

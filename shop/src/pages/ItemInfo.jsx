@@ -5,7 +5,7 @@ const ItemInfo = () => {
     const [item , setItem]=useContext(ItemContext)
   return(
       <div className={"flex text-5xl content-center justify-center text-justify items-center p-4 "}>
-          {item}
+          {item.name}
       </div>
   )
 }
