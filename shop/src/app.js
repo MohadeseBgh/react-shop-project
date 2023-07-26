@@ -9,12 +9,12 @@ const App = () => {
 
         <>
             <ItemProvider>
-                <div className={"flex flex-col items-center justify-center h-screen w-screen bg-[#CACACA]"}>
+                <div className={"flex flex-col items-center justify-center h-screen w-screen bg-[#CACACA] "}>
                         <div className={"basis-1/12 w-full"}>
                             <NavBar/>
                         </div>
-                        <div className={"flex flex-row basis-11/12 w-full"}>
-                            <div className={"basis-3/12 overflow-auto overflow-x-hidden bg-gradient-to-b from-[#CACACA] to-[#FCFAF1]"}>
+                        <div className={"flex flex-row basis-11/12 w-full overflow-hidden"}>
+                            <div className={"basis-3/12 bg-gradient-to-b from-[#CACACA] to-[#FCFAF1] overflow-auto no-scrollbar"}>
                                 <MenuList/>
                             </div>
                             <div className={"basis-9/12 bg-[#CACACA]"}>
