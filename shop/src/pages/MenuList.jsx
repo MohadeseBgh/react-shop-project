@@ -1,6 +1,6 @@
 import { useState} from "react";
 import Item from "../components/item";
-import coffee from '../img/coffee2.jpg'
+import coffee from '../img/coffee3.png'
 const MenuList = () => {
     const [items,setItems]=useState([
         {name:'Espresso',description:'Espresso is made by forcing nearly boiling water through finely-ground coffee beans',img:coffee,price:'$50'},

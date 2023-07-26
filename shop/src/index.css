@@ -15,3 +15,6 @@
         }
     }
 }
+.parent:hover .child {
+    background-color: #FFCD38;
+}
