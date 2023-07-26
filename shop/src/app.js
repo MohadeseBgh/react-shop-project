@@ -14,10 +14,10 @@ const App = () => {
                             <NavBar/>
                         </div>
                         <div className={"flex flex-row basis-11/12 w-full"}>
-                            <div className={"basis-1/3 overflow-auto overflow-x-hidden bg-gradient-to-b from-[#FFC26F] to-[#F9E0BB]"}>
+                            <div className={"basis-3/12 overflow-auto overflow-x-hidden bg-gradient-to-b from-[#CACACA] to-[#FCFAF1]"}>
                                 <MenuList/>
                             </div>
-                            <div className={"basis-2/3 bg-[#F9E0BB]"}>
+                            <div className={"basis-9/12 bg-[#CACACA]"}>
                                 <ItemInfo/>
                             </div>
                         </div>
