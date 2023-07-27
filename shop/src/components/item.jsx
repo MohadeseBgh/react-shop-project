@@ -3,11 +3,23 @@ import {ChosenItemContext} from "../context/ChosenItemContext";
 import cafeIcone from "../img/cafe.png";
 import coffee from '../img/coffee2.jpg'
 import {BsCart} from "react-icons/bs";
+import {ItemsContext} from "../context/ItemsContext";
 
 const Item = (props) => {
-    const [item, setItem] = useContext(ChosenItemContext)
+    const [item, setItem] = useContext(ChosenItemContext);
+    const [items, setItems]=useContext(ItemsContext);
     const chooseHandle = () => {
-        //first set changes of past item
+        const nextItems = items.map(item0 => {
+            if (item0.name !== item.name) {
+                return item0;
+            } else {
+                return {
+                    ...item0,
+                    counter: item.counter,
+                };
+            }
+        });
+        setItems(nextItems);
         setItem({name: props.itemName, description: props.des, img: props.img, price: props.price ,counter: props.counter})
     }
     return (
