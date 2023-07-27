@@ -1,15 +1,17 @@
 import React from "react";
 import MenuList from "./pages/MenuList";
 import ItemInfo from "./pages/ItemInfo";
-import ItemProvider from "./context/ItemContext";
+import ChosenItemProvider from "./context/ChosenItemContext";
 import NavBar from "./components/navBar";
+import ItemsProvider from "./context/ItemsContext";
 
 const App = () => {
     return (
 
         <>
-            <ItemProvider>
-                <div className={"flex flex-col items-center justify-center h-screen w-screen bg-[#CACACA] "}>
+            <ItemsProvider>
+                <ChosenItemProvider>
+                    <div className={"flex flex-col items-center justify-center h-screen w-screen bg-[#CACACA] "}>
                         <div className={"basis-1/12 w-full"}>
                             <NavBar/>
                         </div>
@@ -21,8 +23,9 @@ const App = () => {
                                 <ItemInfo/>
                             </div>
                         </div>
-                </div>
-            </ItemProvider>
+                    </div>
+                </ChosenItemProvider>
+            </ItemsProvider>
         </>
     );
 };
