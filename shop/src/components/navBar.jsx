@@ -1,6 +1,10 @@
 import {IoCartOutline} from "react-icons/io5";
 import cafeIcone from '../img/cafe.png'
+import {useContext} from "react";
+import {CounterContext} from "../context/CounterContext";
 const NavBar = () => {
+    const [counter , setCounter]=useContext(CounterContext);
+
     return(
         <div className={"flex flex-row items-center justify-between"}>
 
@@ -12,9 +16,11 @@ const NavBar = () => {
                 Order Now!!!
             </div>
             <div className={"flex flex-row pr-5 items-center content-center justify-center"}>
-                <button className={"m-2 transition hover:-translate-1 hover:scale-125 duration-300"}>
+                <button className={"flex flex-col m-2 transition hover:-translate-1 hover:scale-125 duration-300 relative pb-1 pr-1.5"}>
                     <IoCartOutline className={"text-2xl "}/>
+                    <span className={"text-xs absolute bottom-0 right-0 bg-red-500 rounded-full px-1"}>{counter}</span>
                 </button>
+
                 <button className={"p-1 pl-4 pr-4 border-2 border-[#343434] rounded-lg m-2 hover:bg-[#343434] hover:text-white"}>
                     Sign In
                 </button>

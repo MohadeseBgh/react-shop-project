@@ -1,23 +1,24 @@
 import {useContext, useState} from "react";
 import {ChosenItemContext} from "../context/ChosenItemContext";
 import coffee from "../img/coffee3.png";
+import {CounterContext} from "../context/CounterContext";
 
 const Counter = () => {
-    const [counter , setCounter]=useState(0);
+    const [counter , setCounter]=useContext(CounterContext);
     const [item , setItem]=useContext(ChosenItemContext)
 
     const increase = () => {
-        // setCounter((prevState)=>{
-        //     return prevState+1;
-        // });
+        setCounter((prevState)=>{
+            return prevState+1;
+        });
         setItem((prevState)=>{
             return {name:prevState.name,description:prevState.description ,img:prevState.img ,price:prevState.price, counter:prevState.counter+1};
         })
     };
     const decrease = () => {
-        // setCounter((prevState)=>{
-        //     return prevState-1;
-        // });
+        setCounter((prevState)=>{
+            return prevState-1;
+        });
         setItem((prevState)=>{
             return {name:prevState.name,description:prevState.description ,img:prevState.img ,price:prevState.price, counter:prevState.counter-1};
         })

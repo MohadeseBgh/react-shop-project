@@ -4,6 +4,7 @@ import ItemInfo from "./pages/ItemInfo";
 import ChosenItemProvider from "./context/ChosenItemContext";
 import NavBar from "./components/navBar";
 import ItemsProvider from "./context/ItemsContext";
+import CounterProvider from "./context/CounterContext";
 
 const App = () => {
     return (
@@ -11,19 +12,21 @@ const App = () => {
         <>
             <ItemsProvider>
                 <ChosenItemProvider>
-                    <div className={"flex flex-col items-center justify-center h-screen w-screen bg-[#CACACA] "}>
-                        <div className={"basis-1/12 w-full"}>
-                            <NavBar/>
-                        </div>
-                        <div className={"flex flex-row basis-11/12 w-full overflow-hidden"}>
-                            <div className={"basis-3/12 bg-[#CACACA] overflow-auto no-scrollbar"}>
-                                <MenuList/>
+                    <CounterProvider>
+                        <div className={"flex flex-col items-center justify-center h-screen w-screen bg-[#CACACA] "}>
+                            <div className={"basis-1/12 w-full"}>
+                                <NavBar/>
                             </div>
-                            <div className={"basis-9/12 bg-gradient-to-b from-[#CACACA] to-[#FCFAF1] "}>
-                                <ItemInfo/>
+                            <div className={"flex flex-row basis-11/12 w-full overflow-hidden"}>
+                                <div className={"basis-3/12 bg-[#CACACA] overflow-auto no-scrollbar"}>
+                                    <MenuList/>
+                                </div>
+                                <div className={"basis-9/12 bg-gradient-to-b from-[#CACACA] to-[#FCFAF1] "}>
+                                    <ItemInfo/>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </CounterProvider>
                 </ChosenItemProvider>
             </ItemsProvider>
         </>
