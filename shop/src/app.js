@@ -5,6 +5,7 @@ import ChosenItemProvider from "./context/ChosenItemContext";
 import NavBar from "./components/navBar";
 import ItemsProvider from "./context/ItemsContext";
 import CounterProvider from "./context/CounterContext";
+import Collections from "./components/collections";
 
 const App = () => {
     return (
@@ -22,7 +23,13 @@ const App = () => {
                                     <MenuList/>
                                 </div>
                                 <div className={"basis-9/12 bg-gradient-to-b from-[#CACACA] to-[#FCFAF1] overflow-auto no-scrollbar"}>
-                                    <ItemInfo/>
+                                    <div className={"basis-1/12"}>
+                                        <Collections/>
+                                    </div>
+                                    <div className={"11/12"}>
+                                        <ItemInfo/>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>

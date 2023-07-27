@@ -31,7 +31,6 @@ const ItemInfo = () => {
           </div>
           <div className={"text-lg text-color5 border-b-2 border-b-color4 basis-1/12 p-1 mx-3"}>Details</div>
           <div className={"text-xs basis-3/12 p-1 mx-4"}>aSDFGTYHUJIKOLPKJHUGHYFDSFGHJKLKJHGFDSXCFGVHBJNKML</div>
-
       </div>
 
   )

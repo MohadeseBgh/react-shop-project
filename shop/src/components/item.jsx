@@ -8,6 +8,7 @@ import {ItemsContext} from "../context/ItemsContext";
 const Item = (props) => {
     const [item, setItem] = useContext(ChosenItemContext);
     const [items, setItems]=useContext(ItemsContext);
+
     const chooseHandle = () => {
         const nextItems = items.map(item0 => {
             if (item0.name !== item.name) {

@@ -13,7 +13,6 @@ const ItemsProvider = (props) => {
         {name:'Americano',description:'Espresso is made by forcing nearly boiling water through finely-ground coffee beans',img:coffee,price:'$50', counter:0},
         {name:'Cappuccino',description:'Espresso is made by forcing nearly boiling water through finely-ground coffee beans',img:coffee,price:'$50', counter:0},
         {name:'Irish Coffee',description:'Espresso is made by forcing nearly boiling water through finely-ground coffee beans',img:coffee,price:'$50', counter:0},
-        {name:'Affogato',description:'Espresso is made by forcing nearly boiling water through finely-ground coffee beans',img:coffee,price:'$50', counter:0}
     ])
 
     return (
