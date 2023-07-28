@@ -37,7 +37,7 @@ const Item = (props) => {
                     {props.des}
                 </div>
                 <button className={"bg-[#CACACA] p-3 rounded-3xl "}>
-                        <BsCart className={"bg-[#4A4A4A] text-5xl rounded-xl p-3 transition hover:-translate-1 hover:scale-110 duration-300"}/>
+                        <BsCart className={"bg-[#4A4A4A] text-5xl rounded-xl p-3 transition hover:-translate-1 hover:scale-110 duration-300 text-color6"}/>
                 </button>
             </div>
         </div>

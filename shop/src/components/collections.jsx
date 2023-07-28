@@ -88,21 +88,8 @@ const Collections = () => {
         setItems(allItems);
 
     }
-    // const setChanges=()=>{
-    //     const nextItems = allItems.map(item0 => {
-    //         if (item0.name !== item.name) {
-    //             return item0;
-    //         } else {
-    //             return {
-    //                 ...item0,
-    //                 counter: item.counter,
-    //             };
-    //         }
-    //     });
-    //     setAllItems(nextItems);
-    // }
     return(
-        <div className={"flex flex-row justify-center content-center gap-40 pt-3 pb-1 "}>
+        <div className={"flex flex-row justify-center content-center gap-40 pt-5 pb-2 "}>
             <button className={`${all===true ? "text-color7" : "text-color4"} `} onClick={allItem}>AllItems</button>
             <button className={`${coffe===true ? "text-color7" : "text-color4"} `}  onClick={coffeeItems}>Coffee</button>
             <button className={`${tea===true ? "text-color7" : "text-color4"} `} onClick={teaItems}>Tea</button>
