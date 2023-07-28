@@ -1,12 +1,14 @@
 import {useContext, useState} from "react";
 import coffee from "../img/coffee3.png";
 import {ItemsContext} from "../context/ItemsContext";
+import {ChosenItemContext} from "../context/ChosenItemContext";
 
 const Collections = () => {
     const[coffe , setCoffe]=useState(false);
     const[tea , setTea]=useState(false);
     const[shake , setShake]=useState(false);
     const[all , setAll]=useState(false);
+    const [item, setItem] = useContext(ChosenItemContext);
 
     const [items, setItems] = useContext(ItemsContext )
     const [allItems, setAllItems] = useState( [
@@ -17,7 +19,7 @@ const Collections = () => {
         {name:'Americano',description:'Its just espresso with hot water dripping over it.',img:coffee,price:'$50', counter:0},
         {name:'Cappuccino',description:'Cappuccinos are a classic Italian type of coffee drink made of espresso, milk, and thick foam in equal parts',img:coffee,price:'$50', counter:0},
         {name:'Irish Coffee',description:'This hot beverage is made with espresso, whiskey, and cream.',img:coffee,price:'$40', counter:0},
-        {name:'Affogato',description:'It is made by ice cream and espresso.',img:coffee,price:'$50', counter:0},
+        {name:'Affogato',description:'It usually takes the form of a scoop of plain milk-flavored or vanilla gelato or ice cream topped or "drowned" with a shot of hot espresso.',img:coffee,price:'$50', counter:0},
         {name:'Black tea',description:'To produce black tea, tea leaves are harvested, wilted, and then lightly crushed.',img:coffee,price:'$50', counter:0},
         {name:'Green tea',description:'Green tea is another type of tea made from the camellia sinensis plant.',img:coffee,price:'$50', counter:0},
         {name:'White tea',description:'White tea is a delicate, minimally processed tea that is highly sought after by connoisseurs.',img:coffee,price:'$50', counter:0},
@@ -86,7 +88,19 @@ const Collections = () => {
         setItems(allItems);
 
     }
-
+    // const setChanges=()=>{
+    //     const nextItems = allItems.map(item0 => {
+    //         if (item0.name !== item.name) {
+    //             return item0;
+    //         } else {
+    //             return {
+    //                 ...item0,
+    //                 counter: item.counter,
+    //             };
+    //         }
+    //     });
+    //     setAllItems(nextItems);
+    // }
     return(
         <div className={"flex flex-row justify-center content-center gap-40 pt-3 pb-1 "}>
             <button className={`${all===true ? "text-color7" : "text-color4"} `} onClick={allItem}>AllItems</button>
