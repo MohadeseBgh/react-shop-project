@@ -13,7 +13,7 @@ const Home = () => {
           </div>
           <div className={"flex flex-row basis-11/12 w-full overflow-hidden "}>
               <div className={"basis-3/12 overflow-auto no-scrollbar mt-10"}>
-                  <div className={"flex items-center content-center justify-center mt-5 basis-2/12 absolute bg-color6 top-14 pr-7"}>
+                  <div className={"flex items-center content-center justify-center mt-5 basis-2/12 absolute bg-color6 top-14 pr-7 pb-1"}>
                       <SearchBar/>
                   </div>
                   <div className={" bg-[#CACACA] "}>
