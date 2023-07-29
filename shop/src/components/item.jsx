@@ -26,14 +26,14 @@ const Item = (props) => {
     return (
 
         <div className={"parent"} onClick={chooseHandle}>
-            <div className={"bg-[#d3a317] rounded-t-3xl rounded-r-3xl  p-2 h-32 flex flex-row items-center child"}>
+            <div className={"bg-[#d3a317] rounded-t-3xl rounded-r-3xl  p-2 h-32 flex flex-row items-center child "}>
                 <img src={props.img} className={"h-full w-32 rounded-3xl p-1"}/>
                 <div className={"text-2xl ml-2"}>
                     {props.itemName}
                 </div>
             </div>
             <div className={"flex flex-row bg-[#CACACA] "}>
-                <div className={"text-xs p-2 bg-[#d3a317] rounded-b-3xl rounded-tr-sm child"}>
+                <div className={"text-xs p-2 bg-[#d3a317] rounded-b-3xl rounded-tr-sm child hover:shadow-xl shadow-gray-900 grow"}>
                     {props.des}
                 </div>
                 <button className={"bg-[#CACACA] p-3 rounded-3xl "}>

@@ -37,7 +37,7 @@ const Counter = () => {
     };
     return (
         <div>
-            <div className={"flex flex-row border border-[#4A4A4A] rounded-3xl pl-5 pr-5 gap-3 bg-[#FFCD38]"}>
+            <div className={"flex flex-row rounded-3xl pl-5 pr-5 gap-3 bg-[#FFCD38] shadow-inner shadow-gray-700"}>
                 <button className={"p-1 transition hover:-translate-1 hover:scale-125 duration-300"}
                         onClick={increase}>+
                 </button>

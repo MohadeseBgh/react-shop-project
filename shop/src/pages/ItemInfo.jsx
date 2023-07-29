@@ -44,7 +44,6 @@ const ItemInfo = () => {
                               {flag ? <GoHeart className={"text-xl ease-in-out hover:-translate-1 hover:scale-110 "}/>
                                   : <GoHeartFill className={"text-xl transition ease-in-out hover:-translate-1 hover:scale-110 "}/>}
                           </button>
-
                           <button ><CiSaveDown2 className={"font-bold text-2xl transition ease-in-out hover:-translate-1 hover:scale-110"}/></button>
                       </div>
                   </div>
