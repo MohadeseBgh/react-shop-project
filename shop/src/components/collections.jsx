@@ -4,7 +4,7 @@ import {ItemsContext} from "../context/ItemsContext";
 import {ChosenItemContext} from "../context/ChosenItemContext";
 
 const Collections = () => {
-    const [chosen, setChosen] = useState({coffee: true, tea: true, shake: true, all: true});
+    const [chosen, setChosen] = useState({coffee: false, tea: false, shake: false, all: false});
     const [item, setItem] = useContext(ChosenItemContext);
     const [items, setItems] = useContext(ItemsContext)
     const [allItems, setAllItems] = useState([

@@ -23,7 +23,7 @@ const Counter = () => {
     };
     const decrease = () => {
         setCounter((prevState) => {
-            return prevState - 1;
+            return Math.max(0,prevState - 1);
         });
         setItem((prevState) => {
             return {
@@ -31,7 +31,7 @@ const Counter = () => {
                 description: prevState.description,
                 img: prevState.img,
                 price: prevState.price,
-                counter: prevState.counter - 1
+                counter: Math.max(prevState.counter - 1,0)
             };
         })
     };
